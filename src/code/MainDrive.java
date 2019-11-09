@@ -6,8 +6,35 @@ public class MainDrive {
 		
 //		순서가 뒤죽박죽인 배열.
 		int[] originalNumbers = {8,1,7,2,6,12,11,3};
+		int[] originalNumbers2 = {3,9,2,5,6,13,11,8};
+		
 //		셀렉션 솔트로 정리한 배열
 		int[] selectionSortNumbers = new int[originalNumbers.length];
+		
+//		Bubble Sort로 2번째 배열을 정리.
+		
+		for (int i=0 ; i < originalNumbers2.length ; i++) {
+			
+			for (int j=0 ; j < originalNumbers2.length-1 ; j++) {
+				
+				if (originalNumbers2[j] > originalNumbers2[j+1]) {
+					
+					int tempNum = originalNumbers2[j];
+					originalNumbers2[j] = originalNumbers2[j+1];
+					originalNumbers2[j+1] = tempNum;
+				}
+				
+			}
+			
+		}
+		
+//		버블소트 정리 결과
+		
+		for (int num : originalNumbers2) {
+			System.out.println(num);
+		}
+		
+		System.out.println("========================");
 		
 //		어떻게 해야 1~12의 순서로 출력? - Selection Sort 작성.
 		
