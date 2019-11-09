@@ -15,7 +15,7 @@ public class MainDrive {
 		
 		for (int i=0 ; i < originalNumbers2.length ; i++) {
 			
-			for (int j=0 ; j < originalNumbers2.length-1 ; j++) {
+			for (int j=0 ; j < originalNumbers2.length - (i+1) ; j++) {
 				
 				if (originalNumbers2[j] > originalNumbers2[j+1]) {
 					
